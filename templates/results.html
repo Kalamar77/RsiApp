@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Resultados del Análisis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<div class="text-content">
+    <h1>Resultados del Análisis</h1>
+    <p>Capital Inicial ingresado: {{ capital }}</p>
+    <p>Símbolo de la Acción seleccionado: {{ ticker }}</p>
+    <p>Valor total neto cash + cartera al final del periodo: {{ ganancia_total }}</p>
+</div>
+
+
+
+<div class="buttons">
+    <a href="{{ url_for('index') }}" class="btn">Volver al Menú Principal</a>
+    <a href="{{ url_for('thanks') }}" class="btn">Salir</a>
+</div>
+
+    <div class="transparent-graph" style="text-align:center;">
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="Gráfico de Resultados" style="width:80%; margin:auto;">
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios Registrados</title>
+</head>
+<body>
+    <h1>Usuarios Registrados</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user['name'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

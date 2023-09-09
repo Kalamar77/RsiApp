@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .text-content-welcome {
+            margin-left: 220px; /* Agrega un margen izquierdo de 220px */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-content-welcome">
+        <h1 class="centered-title">Bienvenido a la Estrategia RSI</h1>
+        <h2>Por favor, ingresa tu nombre para continuar</h2>
+        <form method="POST" action="{{ url_for('welcome') }}">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" required><br><br>
+            <input type="submit" value="Entrar" class="large-button">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+

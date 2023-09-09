@@ -1,0 +1,83 @@
+body {
+    background-image: url("/static/1.jpg");
+    color: white;           /* Establece el color de la fuente a blanco */
+    font-weight: bold;
+    background-size: cover; /* Ajusta la imagen de fondo al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    font-family: 'Oswald', sans-serif;
+}
+.centered-title {
+    text-align: center;  /* Centra el texto horizontalmente */
+    margin-top: 2%;     /* Añade un pequeño margen en la parte superior para que no esté pegado al borde */
+    font-size: 65px;
+}
+
+.centered-image img {
+    width: 50%;         /* Ajusta el ancho de la imagen al 80% del contenedor */
+    max-width: 1000px;  /* Establece un ancho máximo para la imagen */
+    height: auto;       /* Mantiene la relación de aspecto de la imagen */
+}
+.transparent-graph {
+    opacity: 0.7; /* Ajusta este valor según la transparencia deseada. 0 es completamente transparente y 1 es completamente opaco. */
+}
+.text-content {
+    padding-left: 250px; /* Ajusta este valor según tus necesidades */
+}
+.text-content-index {
+    padding-left: 500px;
+}
+.large-button {
+    font-size: 25px;       /* Ajusta el tamaño de la fuente */
+    padding: 20px 50px;   /* Ajusta el espaciado interno del botón */
+    cursor: pointer;      /* Cambia el cursor a una mano al pasar por encima */
+    border: none;         /* Elimina el borde predeterminado */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white;         /* Color del texto del botón */
+    border-radius: 5px;   /* Añade bordes redondeados al botón */
+    transition: 0.3s;     /* Añade una transición suave al pasar el mouse por encima */
+}
+
+.large-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+h1 {
+    font-size: 52px; /* Ajusta este valor según tus preferencias */
+}
+label {
+    font-size: 32px; /* Ajusta este valor según tus preferencias */
+    display: block; /* Hace que las etiquetas ocupen toda la línea, lo que provoca un salto de línea después de cada etiqueta */
+    margin-bottom: 15px
+}
+input[type="number"], input[type="text"], select {
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio interno */
+    width: 15%;
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el tamaño total del elemento */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.buttons {
+    position: fixed;
+    top: 50px;
+    right: 250px;
+    z-index: 1000;  /* Asegura que los botones estén siempre en la parte superior */
+}
+
+.btn {
+    font-size: 25px;
+    padding: 20px 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block; /* Esto hace que los botones se muestren uno al lado del otro */
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+

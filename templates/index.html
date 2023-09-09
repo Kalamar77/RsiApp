@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Análisis Financiero</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="text-content-index">
+        <h1 class="centered-title">ESTRATEGIA RSI</h1>
+        <h1>Ingrese el Capital Inicial y el Símbolo de la Acción</h1>
+        <form method="POST">
+            <label for="capital">Capital Inicial:</label>
+            <input type="number" name="capital" required><br><br>
+
+            <label for="ticker">Símbolo de la Acción:</label>
+            <!-- Aquí comienza el campo desplegable -->
+            <select name="ticker" required>
+                <option value="AAPL">APPLE</option>
+                <option value="MSFT">MICROSOFT</option>
+                <option value="GOOGL">GOOGLE</option>
+                <option value="AMZN">AMAZON</option>
+                <option value="META">META</option>
+                <option value="TSLA">TESLA</option>
+                <option value="T">AT&T</option>
+                <option value="INTC">INTEL</option>
+                <option value="PFE">PFIZER</option>
+                <option value="BAC">BANK OF AMERICA</option>
+                <!-- Agregar más opciones si queremos -->
+            </select>
+            <br><br>
+            <!-- Aquí termina el campo desplegable -->
+
+            <input type="submit" value="Analizar" class="large-button">
+        </form>
+    </div>
+</body>
+</html>
+

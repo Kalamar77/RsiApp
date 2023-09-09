@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="text-content-thanks" style="text-align: center; padding: 50px;">
+        <h1 style="font-family: 'Pacifico', cursive; font-size: 36px;">¡Gracias TOKIO SCHOOL!</h1>
+        <p style="font-family: 'Patrick Hand', cursive; font-size: 24px;">¡Gracias por utilizar nuestra aplicación!</p>
+        <a href="{{ url_for('index') }}" class="btn" style="background-color: #4CAF50; color: white; padding: 14px 20px; margin: 15px 0; border: none; cursor: pointer; width: 20%; font-family: 'Oswald', sans-serif;">Volver al inicio</a>
+    </div>
+</body>
+</html>
